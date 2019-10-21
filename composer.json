@@ -1,0 +1,17 @@
+{
+    "name": "hapxu3/test-case",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "narhis",
+            "email": "narhis_8@mail.ru"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    }
+}
