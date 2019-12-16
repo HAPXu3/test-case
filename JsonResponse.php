@@ -2,6 +2,10 @@
 
 declare(strict_types = 1);
 
+namespace app;
+
+use app\interfaces\Response;
+
 class JsonResponse implements Response
 {
     protected $output;

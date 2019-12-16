@@ -1,17 +1,27 @@
 {
-    "name": "hapxu3/test-case",
+    "name": "hapxu3/testcase-aussi",
     "type": "project",
     "license": "MIT",
     "authors": [
         {
-            "name": "narhis",
+            "name": "HAPXu3",
             "email": "narhis_8@mail.ru"
         }
     ],
     "require": {
-        "php": ">=7.2.0"
+        "php": ">=7.4.0",
+        "ext-json": "*"
     },
     "require-dev": {
         "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": "",
+            "app\\decorators\\": "decorators/",
+            "app\\exceptions\\": "exceptions/",
+            "app\\interfaces\\": "interfaces/",
+            "app\\tests\\": "tests/"
+        }
     }
 }

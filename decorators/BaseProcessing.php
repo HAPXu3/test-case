@@ -2,6 +2,10 @@
 
 declare(strict_types = 1);
 
+namespace app\decorators;
+
+use app\interfaces\WordProcessing;
+
 abstract class BaseProcessing implements WordProcessing
 {
     protected $wordProcessing;

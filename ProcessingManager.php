@@ -2,6 +2,11 @@
 
 declare(strict_types = 1);
 
+namespace app;
+
+use app\decorators\BaseProcessing;
+use app\interfaces\WordProcessing;
+
 class ProcessingManager
 {
     protected $methods = [];

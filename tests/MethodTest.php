@@ -2,6 +2,15 @@
 
 declare(strict_types = 1);
 
+namespace app\tests;
+
+use app\PlainProcessing;
+use app\decorators\{HtmlspecialcharsProcessing,
+    RemoveSpacesProcessing,
+    RemoveSymbolsProcessing,
+    ReplaceSpacesToEolProcessing,
+    StripTagsProcessing,
+    ToNumberProcessing};
 use PHPUnit\Framework\TestCase;
 
 class MethodTest extends TestCase

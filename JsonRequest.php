@@ -2,6 +2,12 @@
 
 declare(strict_types = 1);
 
+namespace app;
+
+use app\exceptions\ArgumentException;
+use app\interfaces\Request;
+use app\interfaces\Response;
+
 class JsonRequest implements Request
 {
     protected $input;

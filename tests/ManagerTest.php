@@ -2,6 +2,10 @@
 
 declare(strict_types = 1);
 
+namespace app\tests;
+
+use app\ProcessingManager;
+use app\interfaces\WordProcessing;
 use PHPUnit\Framework\TestCase;
 
 class ManagerTest extends TestCase
