@@ -12,16 +12,18 @@ class ManagerTest extends TestCase
 
         $manager = new ProcessingManager($methods);
 
-        $this->asserTrue(is_subclass_of($manager, WordProcessing::class));
+        $this->assertTrue(is_subclass_of($manager->manage(), WordProcessing::class));
 
         $methods = ['stripTags', 'replaceSpacesToEol', 'toNumber'];
 
         $manager = new ProcessingManager($methods);
 
-        $this->asserTrue(is_subclass_of($manager, WordProcessing::class));
+        $this->assertTrue(is_subclass_of($manager->manage(), WordProcessing::class));
 
         $methods = [];
 
-        $this->asserTrue(is_subclass_of($manager, WordProcessing::class));
+        $manager = new ProcessingManager($methods);
+
+        $this->assertTrue(is_subclass_of($manager->manage(), WordProcessing::class));
     }
 }

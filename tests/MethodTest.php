@@ -30,7 +30,7 @@ class MethodTest extends TestCase
 
         $removeSymbols = new RemoveSymbolsProcessing($plain);
 
-        $this->assertSame('text with dot and another symbols ', $removeSymbols->process('text with dot(.) and [another] symbols /!@#$'));
+        $this->assertSame('text with dot and another symbols ', $removeSymbols->process('text with dot(.) and $another% symbols /!@#$'));
     }
 
     public function testReplaceSpacesToEolProcessing()
@@ -61,6 +61,6 @@ class MethodTest extends TestCase
 Привет, мне на <a href=\"test@test.ru\">test</a> пришло приглашение встретиться, попить кофе с <strong>10%</strong> содержанием молока за <i>$5</i>, пойдем вместе!
 TEXT;
 
-        $this->assertSame(10, $toNumber->process($text));
+        $this->assertSame('10', $toNumber->process($text));
     }
 }
