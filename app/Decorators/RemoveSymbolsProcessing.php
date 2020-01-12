@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace app\decorators;
+namespace App\Decorators;
 
 class RemoveSymbolsProcessing extends BaseProcessing
 {

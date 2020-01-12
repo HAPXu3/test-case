@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace app\exceptions;
+namespace App\Exceptions;
 
 class ArgumentException extends \Exception
 {}

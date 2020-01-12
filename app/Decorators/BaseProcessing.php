@@ -2,9 +2,9 @@
 
 declare(strict_types = 1);
 
-namespace app\decorators;
+namespace App\Decorators;
 
-use app\interfaces\WordProcessing;
+use App\Interfaces\WordProcessing;
 
 abstract class BaseProcessing implements WordProcessing
 {

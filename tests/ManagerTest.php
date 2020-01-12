@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace app\tests;
+namespace Tests;
 
 use app\ProcessingManager;
 use app\interfaces\WordProcessing;
